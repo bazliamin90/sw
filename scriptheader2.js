@@ -8,7 +8,6 @@ headerTemplate2.innerHTML = `
       background-color: white;
       padding: 5px;
       text-align: center;
-	  margin-bottom: 20px;
     }
 	
 	footer {
