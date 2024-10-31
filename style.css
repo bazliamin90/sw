@@ -1,0 +1,71 @@
+	body {
+      overflow-y: scroll;
+      background-color: lightyellow;
+      margin: 0;
+	  font-size: 14px;
+	  font-family: arial;
+	  color: #555;
+    }
+	main {
+		margin: 0px auto;
+		max-width: 50rem;
+		width: 90%;
+		margin-bottom: 200px;
+	}
+    .audio-container {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%; /* Adjust this as needed, e.g., 60%, 500px, etc. */
+		max-width: 600px; /* Ensures it doesn’t get too wide on large screens */
+		margin: 20px auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: 1px solid lightgrey;
+		border-radius: 10px;
+    }
+    [id^="controls"] {
+      display: flex;
+      gap: 10px;
+    }
+    .playButton, .stopButton {
+      font-size: 14px;
+      padding: 5px 10px;
+      cursor: pointer;
+	  border: none;
+	  border-radius: 5px;
+    }
+    .playButton {
+      color: white;
+	  background-color: green;
+    }
+	.stopButton {
+      color: white;
+	  background-color: red;
+    }
+    .slider {
+      width: 80%;
+      margin: 10px 0;
+    }
+    a {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+	#searchBox {
+		border: 1px solid lightgrey;
+		border-radius: 10px;
+		outline: none;
+		padding: 5px;
+		width: 70%; /* Adjust this as needed, e.g., 60%, 500px, etc. */
+		max-width: 600px; /* Ensures it doesn’t get too wide on large screens */
+		margin: 10px auto;
+	}
+    @media (max-width: 600px) {
+      body {
+        font-size: 12px;
+      }
+      a, .playButton, .stopButton {
+        font-size: 12px;
+      }
+    }

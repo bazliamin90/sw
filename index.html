@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soutul Walid</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scriptheader2.js"></script>
+  <script src="scriptaudio.js"></script>
+  <script src="scriptsearch.js"></script>
+
+</head>
+<body>
+
+<header2-component></header2-component>
+
+<main>
+<!-- Search input -->
+<center>
+  <input type="text" id="searchBox" placeholder="Cari audio fazakkir, surah, dll ..." onkeyup="filterTopics()">
+</center>
+
+<!-- Audio containers -->
+<div class="audio-container">
+  <a>Fazakkir: Takut akan azab Allah</a>
+  <div id="controls1">
+    <button class="playButton" id="playButton1">Play</button>
+    <button class="stopButton" id="stopButton1">Stop</button>
+  </div>
+  <input type="range" class="slider" id="slider1" min="0" max="100" value="0">
+  <div id="timeDisplay1">00:00 / 00:00</div>
+</div>
+
+<div class="audio-container">
+  <a>Surah 76: Al-Insan</a>
+  <div id="controls2">
+    <button class="playButton" id="playButton2">Play</button>
+    <button class="stopButton" id="stopButton2">Stop</button>
+  </div>
+  <input type="range" class="slider" id="slider2" min="0" max="100" value="0">
+  <div id="timeDisplay2">00:00 / 00:00</div>
+</div>
+
+<div class="audio-container">
+  <a>Surah 109: Al-Kafirun</a>
+  <div id="controls3">
+    <button class="playButton" id="playButton3">Play</button>
+    <button class="stopButton" id="stopButton3">Stop</button>
+  </div>
+  <input type="range" class="slider" id="slider3" min="0" max="100" value="0">
+  <div id="timeDisplay3">00:00 / 00:00</div>
+</div>
+</main>
+
+<!--edit accordingly-->
+<audio id="audio1" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/6242057506659503712.ogg"></audio>
+<audio id="audio2" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/Baz%20_%20Al-Insan.m4a"></audio>
+<audio id="audio3" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/alkafirun.ogg"></audio>
+
+<script>
+  // Setup for each audio container
+  setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1');
+  setupAudioControls('audio2', 'playButton2', 'stopButton2', 'slider2', 'timeDisplay2');
+  setupAudioControls('audio3', 'playButton3', 'stopButton3', 'slider3', 'timeDisplay3');
+</script>
+
+</body>
+</html>
