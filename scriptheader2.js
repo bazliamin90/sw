@@ -6,8 +6,9 @@ headerTemplate2.innerHTML = `
       font-size: 14px;
       color: #555;
       background-color: white;
-      padding: 5px;
+      padding: 15px;
       text-align: center;
+	  font-weight: bold;
     }
 	
 	footer {
@@ -17,6 +18,8 @@ headerTemplate2.innerHTML = `
 		bottom: 0;
 		background-color: white;
 		padding: 5px 0;  /* Adjust padding for height slightly more than the font size */
+		border-radius: 30px 30px 0 0;
+		border-top: 1px solid lightgrey;
 	}
 
 	footer p {
@@ -45,7 +48,7 @@ headerTemplate2.innerHTML = `
   </style>
 
   <div class="header2">
-    <h3>Soutul Walid</h3>
+    <a>Soutul Walid</a>
   </div>
   
   <footer>

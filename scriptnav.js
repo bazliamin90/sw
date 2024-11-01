@@ -8,25 +8,31 @@ headerTemplate.innerHTML = `
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		background-color: black;
+		border-radius: 0 0 30px 30px;
 	}
 	
 	#navitem {
-		background-color: white;
-		padding: 5px 10px;
+		padding: 0 10px;
 		display: flex;
-		gap: 20px;
+		_gap: 15px;
+		color: grey;
 	}
 	
 	#navitem a {
-		color: #555;
-		text-decoration: underline lightgrey dotted;
-		text-underline-offset: 5px;
+		color: white;
+		_text-decoration: underline lightyellow dotted;
+		text-decoration: none;
+		_text-underline-offset: 5px;
+		padding: 5px 10px;
+	}
+	
+	#navitem a:active {
+		color: black;
+		background-color: white;
 	}
 	
 	.home {
-		_top: 20%;
-		_left: -35px;
-		_transform: rotate(90deg);
 		z-index: 9;
 		font-size: 12px;
 		color: #555;
@@ -40,16 +46,44 @@ headerTemplate.innerHTML = `
 		color: white;
 	}
 	
+	#border-rl {
+		border-right: 1px solid grey;
+		border-left: 1px solid grey;
+	}
+	
+	#border-r {
+		border-right: 1px solid grey;
+	}
+	
+	.stt {
+		position: fixed;
+		bottom: 50px;
+		right: 10px;
+		z-index: 9;
+		padding: 5px 5px;
+		font-size: 12px;
+		text-align: center;
+		background-color: #ffd9d9;
+		color: grey;
+		text-decoration: none;
+	}
+
+	.stt:active {
+		color: white;
+		background-color: black;
+	}
   </style>
 
 <!------------------------------------------------------------------>
 
 <div class="nav">
-	<div id=navitem>
-		<a href="index.html">Walid</a>◎
-		<a href="aulad.html">Aulad</a>
+	<div id="navitem">
+		<a href="index.html" id=border-rl>Walid</a><!--◎-->
+		<a href="aulad.html" id=border-r>Aulad</a>
 	</div>
 </div>
+
+<a href='#' class="stt">↑</a>
 
 <!------------------------------------------------------------------>
 `;
