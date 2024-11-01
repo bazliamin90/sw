@@ -28,6 +28,8 @@
   <div id="controls1">
     <button class="playButton" id="playButton1">Play</button>
     <button class="stopButton" id="stopButton1">Stop</button>
+	<button class="restartButton" id="restartButton1">Restart</button>
+    <button class="loopButton" id="loopButton1">Loop: Off</button>
   </div>
   <input type="range" class="slider" id="slider1" min="0" max="100" value="0">
   <div id="timeDisplay1">00:00 / 00:00</div>
@@ -38,6 +40,8 @@
   <div id="controls2">
     <button class="playButton" id="playButton2">Play</button>
     <button class="stopButton" id="stopButton2">Stop</button>
+	<button class="restartButton" id="restartButton2">Restart</button>
+    <button class="loopButton" id="loopButton2">Loop: Off</button>
   </div>
   <input type="range" class="slider" id="slider2" min="0" max="100" value="0">
   <div id="timeDisplay2">00:00 / 00:00</div>
@@ -48,6 +52,8 @@
   <div id="controls3">
     <button class="playButton" id="playButton3">Play</button>
     <button class="stopButton" id="stopButton3">Stop</button>
+	<button class="restartButton" id="restartButton3">Restart</button>
+    <button class="loopButton" id="loopButton3">Loop: Off</button>
   </div>
   <input type="range" class="slider" id="slider3" min="0" max="100" value="0">
   <div id="timeDisplay3">00:00 / 00:00</div>
@@ -61,9 +67,9 @@
 
 <script>
   // Setup for each audio container
-  setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1');
-  setupAudioControls('audio2', 'playButton2', 'stopButton2', 'slider2', 'timeDisplay2');
-  setupAudioControls('audio3', 'playButton3', 'stopButton3', 'slider3', 'timeDisplay3');
+  setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1', 'restartButton1', 'loopButton1');
+  setupAudioControls('audio2', 'playButton2', 'stopButton2', 'slider2', 'timeDisplay2', 'restartButton2', 'loopButton2');
+  setupAudioControls('audio3', 'playButton3', 'stopButton3', 'slider3', 'timeDisplay3', 'restartButton3', 'loopButton3');
 </script>
 
 </body>

@@ -27,14 +27,15 @@
     }
     [id^="controls"] {
       display: flex;
-      gap: 10px;
+      gap: 7px;
     }
-    .playButton, .stopButton {
+    .playButton, .stopButton, .restartButton, .loopButton {
       font-size: 14px;
-      padding: 5px 10px;
+      padding: 5px 5px;
       cursor: pointer;
 	  border: none;
 	  border-radius: 5px;
+	  color: #555;
     }
     .playButton {
       color: white;
@@ -65,7 +66,7 @@
       body {
         font-size: 12px;
       }
-      a, .playButton, .stopButton {
+      a, .playButton, .stopButton, .restartButton, .loopButton, #searchBox {
         font-size: 12px;
       }
     }

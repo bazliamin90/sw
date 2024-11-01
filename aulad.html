@@ -28,6 +28,8 @@
   <div id="controls1">
     <button class="playButton" id="playButton1">Play</button>
     <button class="stopButton" id="stopButton1">Stop</button>
+	<button class="restartButton" id="restartButton1">Restart</button>
+    <button class="loopButton" id="loopButton1">Loop: Off</button>
   </div>
   <input type="range" class="slider" id="slider1" min="0" max="100" value="0">
   <div id="timeDisplay1">00:00 / 00:00</div>
@@ -41,7 +43,7 @@
 
 <script>
   // Setup for each audio container
-  setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1');
+  setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1', 'restartButton1', 'loopButton1');
 </script>
 
 </body>
