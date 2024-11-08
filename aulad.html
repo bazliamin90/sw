@@ -24,6 +24,18 @@
 
 <!-- Audio containers -->
 <div class="audio-container">
+  <a>Dahlia - lagu telur 8-11-2024</a>
+  <div id="controls2">
+    <button class="playButton" id="playButton2">Play</button>
+    <button class="stopButton" id="stopButton2">Stop</button>
+	<button class="restartButton" id="restartButton2">Restart</button>
+    <button class="loopButton" id="loopButton2">Loop: Off</button>
+  </div>
+  <input type="range" class="slider" id="slider2" min="0" max="100" value="0">
+  <div id="timeDisplay2">00:00 / 00:00</div>
+</div>
+
+<div class="audio-container">
   <a>Dahlia - alif ba ta 08-2021</a>
   <div id="controls1">
     <button class="playButton" id="playButton1">Play</button>
@@ -39,11 +51,13 @@
 
 <!--edit accordingly-->
 <audio id="audio1" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/dahlia%20-%20alif%20ba%20ta%2008-2021.ogg"></audio>
+<audio id="audio2" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/dahlia%20-%202024-11-08.ogg"></audio>
 
 
 <script>
   // Setup for each audio container
   setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1', 'restartButton1', 'loopButton1');
+  setupAudioControls('audio2', 'playButton2', 'stopButton2', 'slider2', 'timeDisplay2', 'restartButton2', 'loopButton2');
 </script>
 
 </body>
