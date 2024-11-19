@@ -24,6 +24,18 @@
 
 <!-- Audio containers -->
 <div class="audio-container">
+  <a>Fazakkir: Saba' 34:8-14</a>
+  <div id="controls6">
+    <button class="playButton" id="playButton6">Play</button>
+    <button class="stopButton" id="stopButton6">Stop</button>
+	<button class="restartButton" id="restartButton6">Restart</button>
+    <button class="loopButton" id="loopButton6">Loop: Off</button>
+  </div>
+  <input type="range" class="slider" id="slider6" min="0" max="100" value="0">
+  <div id="timeDisplay6">00:00 / 00:00</div>
+</div>
+
+<div class="audio-container">
   <a>Fazakkir: Ad-Dukhan 44:1-6</a>
   <div id="controls5">
     <button class="playButton" id="playButton5">Play</button>
@@ -90,6 +102,7 @@
 <audio id="audio3" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/alkafirun.ogg"></audio>
 <audio id="audio4" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/baz_alahzab.mp3"></audio>
 <audio id="audio5" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/Bazli%20241113%20Addukhan%201%20to%206.mp3"></audio>
+<audio id="audio6" src="https://github.com/bazliamin90/audio/raw/refs/heads/main/sw/Voice%20241119_base.m4a"></audio>
 <script>
   // Setup for each audio container
   setupAudioControls('audio1', 'playButton1', 'stopButton1', 'slider1', 'timeDisplay1', 'restartButton1', 'loopButton1');
@@ -97,6 +110,7 @@
   setupAudioControls('audio3', 'playButton3', 'stopButton3', 'slider3', 'timeDisplay3', 'restartButton3', 'loopButton3');
   setupAudioControls('audio4', 'playButton4', 'stopButton4', 'slider4', 'timeDisplay4', 'restartButton4', 'loopButton4');
   setupAudioControls('audio5', 'playButton5', 'stopButton5', 'slider5', 'timeDisplay5', 'restartButton5', 'loopButton5');
+  setupAudioControls('audio6', 'playButton6', 'stopButton6', 'slider6', 'timeDisplay6', 'restartButton6', 'loopButton6');
 </script>
 
 </body>
